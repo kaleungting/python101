@@ -80,3 +80,24 @@ print(my_var is None) #=> True
 
 and/or/not
 &&/||/!
+
+== == == == == == == == == == == == == == == == == == == == == ==
+Short-Circuit
+== == == == == == == == == == == == == == == == == == == == == ==
+Python will stop processing conditional expressions as soon as it hits a True or False answer
+
+or 
+print(skip or slowValidation())
+if skip is True, then right side won't be executed to return True
+if skip is False, then right side will be executed to return False
+
+and
+print(skip and slowValidation())
+if skip is True, right side will still need to be executed to return True
+if skip is False, right side won't have to be executed to return False
+
+It's better to put the QUICKER boolean on the left side, because of short-circuiting.
+
+
+is or is not (PREFERRED, it correctly identifies different number types)
+== or != 
