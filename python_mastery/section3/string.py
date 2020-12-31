@@ -65,3 +65,10 @@ negative index, starts at end
 birth_year = input('what year were you born?')
 age = 2019 - int(birth_year)
 print(f'your age is {age}')
+
+
+# Strings aren't mutable but lists are
+# everytime you SLICE a list, it'll create a new object, but if you set a variable equal to an old variable, then it only creates a shallow copy
+
+new_cart = amazon_cart #THIS WILL ONLY CREATE A SHALLOW COPY
+new_cart = amazon_cart[:] #THIS IS HOW U MAKE A DEEP COPY

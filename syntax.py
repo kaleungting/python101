@@ -101,3 +101,29 @@ It's better to put the QUICKER boolean on the left side, because of short-circui
 
 is or is not (PREFERRED, it correctly identifies different number types)
 == or != 
+
+
+IF ELSE CONDITIONALS - NO PARENTHESIS
+JavaScript => if, else if, else
+Python => if, elif, else:
+
+WHILE CONTINUE BREAK
+same as JavaScript
+
+TRY/EXCEPT for error handling
+
+try:
+    do something
+except:
+    do something if it breaks
+
+== == == == == == == == == == == == == == == == == == == == == ==
+PASS
+== == == == == == == == == == == == == == == == == == == == == ==
+because of indentation error in Python, you need to use "pass" if you want your empty if/while statements to not throw an error
+
+if True:
+    pass
+
+while True:
+    pass
