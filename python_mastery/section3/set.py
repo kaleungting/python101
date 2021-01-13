@@ -11,6 +11,11 @@ print(set(my_list))  # returns only unique value
 my_set = {1, 2, 3, 4, 5}
 your_set = {4, 5, 6, 7, 8, 9, 10}
 
+
+#add()
+#remove()
+#copy()
+#clear()
 my_set.difference(your_set)  # {1,2,3}
 my_set.discard(5)  # returns None, but will remove element from the set
 # returns None, but my_set will become {1,2,3}. it removes the elements in common
