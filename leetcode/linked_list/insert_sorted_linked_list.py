@@ -44,3 +44,35 @@ def insert(self, head: 'Node', insertVal: int) -> 'Node':
 # if curr is less than curr.next, then you've reached a pivot point
     # if number is greater than curr, then curr.next = val
     # if number is less
+
+
+
+
+
+def insertLL(head,val):
+    curr = head
+    while True:
+        if (curr.val < curr.next.val) and (curr.val <= val <= curr.next.val):
+            newNode = Node(val)
+            nextNode = curr.next
+            curr.next = newNode
+            newNode.next = nextNode
+            break;
+        
+        if curr.val > curr.next.val and (curr.val <= val >= curr.next.val) or (curr.val >= val <= curr.next.val):
+            newNode = Node(val)
+            nextNode = curr.next
+            curr.next = newNode
+            newNode.next = nextNode
+            break;
+
+        curr = curr.next
+
+    return head
+
+"""
+if curr.val < curr.next.val and insert val is between those numbers, then insert there
+
+if curr.val is bigger than next val, and insertVal is greater than next val and also bigger than currval
+if curr.val is bigger than nextVal and insertVal is less than curr val but small then next val
+"""
